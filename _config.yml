@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: HyG
+title: 房馥的笔记
 brief-intro: Front-end Dev Engineer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://fangfu.github.io" # the base hostname & protocol for your site
@@ -14,14 +14,14 @@ url: "https://fangfu.github.io" # the base hostname & protocol for your site
 permalink: /:year/:month/:day/:title/
 
 # other links
-twitter_username: fangfu126
+twitter_username: fangfu
 facebook_username: fangfu.water
 github_username:  fangfu
-email: fangfu126@126.com
-weibo_username: 3115521wh
-zhihu_username: fangfu
-linkedIn_username: fangfu
-dribbble_username:
+email: fangfu123@163.com
+#weibo_username: 3115521wh
+#zhihu_username: fangfu
+#linkedIn_username: fangfu
+#dribbble_username:
 
 description_footer: 房馥的个人笔记！
 
