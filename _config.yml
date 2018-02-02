@@ -14,8 +14,8 @@ url: "https://fangfu.github.io" # the base hostname & protocol for your site
 permalink: /:year/:month/:day/:title/
 
 # other links
-twitter_username: fangfu
-facebook_username: fangfu.water
+#twitter_username: fangfu
+#facebook_username: fangfu.water
 github_username:  fangfu
 email: fangfu123@163.com
 #weibo_username: 3115521wh

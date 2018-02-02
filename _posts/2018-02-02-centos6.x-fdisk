@@ -1,0 +1,47 @@
+---
+layout: post
+title:  "关于centos6.X挂载磁盘分区的笔记"
+date:   2018-02-02 15:14:54
+categories: centos,磁盘
+tags: centos,磁盘
+excerpt: 关于centos6.X挂载磁盘分区的笔记,也许之后会用的上。
+mathjax: true
+---
+
+过程简单笔记：
+
+df -h
+
+fdisk -l
+
+fdisk /dev/vdb
+
+```
+   Command (m forhelp):  输入n 
+   Command action
+   e extended
+   p primary partition (1-4):     输入p    输入p为主分区，e为逻辑分区
+
+     Partition number (1-4):  1 （由于是新盘我们输入1来分第一个主分区，共可以分4个主分区）
+
+     First cylinder (1-52216, default 1): 1 （选择该分区的起始磁盘数，建议选择默认1，也可直接回车）
+
+     Last cylinder or +size or +sizeM or +sizeK (1-52216, default 52216):按默认（按回车）即是使用全部可用存储额
+
+ 
+   Command (mfor help): w 写入分区
+```
+
+mkdir /data
+
+fdisk -l
+
+mkfs.ext4 /dev/vdb1
+
+mount /dev/vdb1 /data
+
+df -h
+
+echo "/dev/vdb1            /data                ext4       defaults              0 0" >> /etc/fstab
+
+完成。
