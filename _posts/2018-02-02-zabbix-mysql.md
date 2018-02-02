@@ -2,8 +2,8 @@
 layout: post
 title:  "zabbix没有正常报警的处理"
 date:   2018-02-02 16:18:00
-categories: centos,
-tags: centos,ssh
+categories: zabbix
+tags: zabbix,mysql
 excerpt: 关于zabbix不报警的检查和处理，并记录了重置zabbix分区表的操作。
 mathjax: true
 ---
@@ -140,8 +140,9 @@ Table has no partition for value 1516457600 [insert into history (itemid,clock,n
     call zabbix.partition_create("zabbix","trends_uint","p20181010",UNIX_TIMESTAMP("2018-10-10 00:00:00"));  
     call zabbix.partition_create("zabbix","trends_uint","p20181110",UNIX_TIMESTAMP("2018-11-10 00:00:00"));  
     call zabbix.partition_create("zabbix","trends_uint","p20181210",UNIX_TIMESTAMP("2018-12-10 00:00:00"));  
+    注：UNIX_TIMESTAMP 一般是用于unix的时间戳
 ```   
-UNIX_TIMESTAMP 一般是用于unix的时间戳  
+  
 
 建议你多添加几条免得以后麻烦，我是添加了一年的，直接在命令里改日期就可以了。
 
