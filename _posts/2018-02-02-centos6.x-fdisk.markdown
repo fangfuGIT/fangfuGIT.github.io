@@ -2,8 +2,8 @@
 layout: post
 title:  "关于centos6.X挂载磁盘分区的笔记"
 date:   2018-02-02 15:14:54
-categories: centos,磁盘
-tags: centos,磁盘
+categories: centos
+tags: centos
 excerpt: 关于centos6.X挂载磁盘分区的笔记,也许之后会用的上。
 mathjax: true
 ---

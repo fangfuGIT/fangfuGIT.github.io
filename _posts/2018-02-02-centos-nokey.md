@@ -2,8 +2,8 @@
 layout: post
 title:  "centos免密钥登录的记录"
 date:   2018-02-02 16:18:00
-categories: centos,
-tags: centos,ssh
+categories: centos
+tags: ssh
 excerpt: 关于centos免密钥登录的一些笔记，一般用于计划任务调用脚本执行远程操作的。
 mathjax: true
 ---

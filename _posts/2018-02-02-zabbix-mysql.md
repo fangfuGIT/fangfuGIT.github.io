@@ -3,7 +3,7 @@ layout: post
 title:  "zabbix没有正常报警的处理"
 date:   2018-02-02 16:18:00
 categories: zabbix
-tags: zabbix,mysql
+tags: zabbix
 excerpt: 关于zabbix不报警的检查和处理，并记录了重置zabbix分区表的操作。
 mathjax: true
 ---
