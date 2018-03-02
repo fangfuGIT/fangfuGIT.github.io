@@ -35,10 +35,21 @@ deactivate
 workon py3virtualenv
 ```
 
+关于一些函数的记录：
 
 capitalize() 首字母大写，其余全部小写 
+```
+d='dxcuUdasx'
+print d.capitalize()
+```
 upper() 全转换成大写
 lower() 全转换成小写
+
+高阶函数
+map()
+reduce()
+filter()
+sorted()
 
 
 
@@ -46,4 +57,4 @@ lower() 全转换成小写
 
 
 python 基本语法学习  [https://www.imooc.com/learn/177](https://www.imooc.com/learn/177)
-
+python 函数模块对象  [https://www.imooc.com/learn/317](https://www.imooc.com/learn/317)
