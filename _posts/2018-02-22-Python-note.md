@@ -35,21 +35,24 @@ deactivate
 workon py3virtualenv
 ```
 
-关于一些函数的记录：
 
-capitalize() 首字母大写，其余全部小写 
+关于一些函数的记录：
 ```
-d='dxcuUdasx'
-print d.capitalize()
-```
-upper() 全转换成大写
-lower() 全转换成小写
+capitalize() #首字母大写，其余全部小写 
+upper() #全转换成大写
+lower() #全转换成小写
 
 高阶函数
 map()
 reduce()
 filter()
 sorted()
+```
+```
+d='dxcuUdasx'
+print d.capitalize()
+```
+
 
 
 
