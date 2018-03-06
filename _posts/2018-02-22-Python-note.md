@@ -53,11 +53,31 @@ d='dxcuUdasx'
 print d.capitalize()
 ```
 
+装饰器：
+本质上就是不改变原函数的代码的基础上，为原函数增加新功能的函数
+```
+def log(func):
+    def inner(*args, **kw):
+        print 'log %s():' % func.__name__
+        return func(*args, **kw)
+    return inner
+@log
+def f():
+    print '2018-03-05'
 
+f()
+```
 
-
+偏函数：
+适用于较多参数的函数,创建新函数，固定住原函数的部分参数，从而使调用更简单
+```
+import functools
+int2 = functools.partial(int, base=2)
+int2('1000000')
+```
 
 
 
 python 基本语法学习  [https://www.imooc.com/learn/177](https://www.imooc.com/learn/177)
+
 python 函数模块对象  [https://www.imooc.com/learn/317](https://www.imooc.com/learn/317)
