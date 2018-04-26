@@ -38,7 +38,62 @@ pip install --upgrade pip
 pip install Django==1.11.8
 ```
 
+windows建立虚拟环境并配置django：
+```
+pip install virtualenvwarpper-win
+mkvirtualenv testvir2
+deactivate  #退出
 
+workon
+workon testvir2 #进入虚拟环境
+pip list
+pip install requests
+pip uninstall requests
+pip install Django==1.11.8
+
+```
+
+settings文件配置
+```
+数据库配置：
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': "testdjango",
+        'USER': "root",
+        'PASSWORD': "xxx",
+        'HOST': "192.168.1.xxx"
+    }
+}   #数据库配置
+
+LANGUAGE_CODE = 'zh-hans' #中文配置
+TIME_ZONE = 'Asia/Shanghai' #时区配置
+USE_TZ = False  #数据库时间配置
+```
+```
+TEMPLATE下的DIRS的配置
+新建STATICIFLES_DIRS的配置
+
+PyCharm执行：
+makemigrations
+migrate #生成数据表
+
+编写view.py
+配置urls.py
+Html和css文件分离
+css文件分离与地址修改
+```
+
+安装mysql-python
+下载Mysql包：
+下载地址: http://www.lfd.uci.edu/~gohlke/pythonlibs/#mysql-python
+找到 32位或64位安装包:
+MySQL_python-1.2.5-cp27-none-win32.whl
+MySQL_python-1.2.5-cp27-none-win_amd64.whl
+然后执行：
+pip install MySQL_python-1.2.5-cp27-none-win32.whl
+
+---------------
 验证Django:
 ```
 python3
@@ -46,18 +101,13 @@ import django
 django.get_version()
 ```
 
-创建一个项目：
+linux命令行中执行命令，创建一个项目：
 ```
 django-admin.py startproject Djangotest
-```
 
-```
 pip install pysqlite
 yum install sqlite*
-```
-新建一个应用：
-```
-python manage.py startapp learn
+python manage.py startapp learn #新建一个应用
 ```
 
 ```
@@ -70,6 +120,91 @@ ALLOWED_HOSTS = ['*']  ＃在这里请求的host添加了*
 ```
 python manage.py runserver 0.0.0.0:8080
 ```
+
+通常情况下，在Django中，一个Model对应数据库中的一个数据表，这个Model以类的形式表现出来，它包含了一些基本字段及数据的一些行为。Django以创建类的形式创建数据表。所有对数据库的操作，都是对类及类的对象进行操作。不需要写SQL语句。这就是ORM对象关系映射。隐藏数据访问细节，把SQL语句都封装起来。
+创建一个类，继承models.Model,这个类就是一张数据表，在类中创建字段。字段就是类里面的属性（变量）
+如：attr = models.CharField(max_length=32,default='title')
+命令行中进入manage.py的同级目录，执行python manage.py makemigrations app名
+再执行python manage.py migrate
+如果是PyCharm，那就执行：
+startapp app名 #新建app
+makemigrations app名
+migrate app名
+然后就可以查看数据库是否做了表结构的改变
+查看所执行的sql语句：
+sqlmigrate app名 文件名
+sqlmigrate message 0001
+
+建超级用户命令createsuperuser
+
+源码安装xadmin:
+1、github下载xadmin源码
+2、复制到Project目录下
+3、修改settings文件：
+```
+    INSTALLED_APPS 中添加
+    'xadmin',
+    'crispy_forms',
+```
+4、安装依赖包：
+```
+pip install django-crispy-forms django-formtools 
+pip install six future httplib2
+pip install django-import-export
+```
+5、修改urls.py
+```
+import xadmin
+
+urlpatterns = [
+    url(r'^xadmin/', xadmin.site.urls),
+]
+```
+6、PyCharm--Debug测试一波
+
+如果要合并目录，比如所有app放到apps目录和extra_apps目录中，，settings配置如下：
+```
+......
+import sys
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, os.path.join(BASE_DIR, 'apps'))
+sys.path.insert(0, os.path.join(BASE_DIR, 'extra_apps'))
+......
+```
+
+一个表中的FOREIGNKEY指向另一个表中的 PRIMARY KEY
+django中的models只是建立对表的描述，一个类对应数据库中的一个表------建立目录并记录makemigrations------在数据库中创建表migrate
+```
+    user = models.ForeignKey(UserProfile, verbose_name=u"用户")
+```
+
+verbose_name_plural是verbose_name的复数形式
+所以verbose_name_plural = verbose_name ，实际上是让复数形式等于原始参数，否则会在名称后面自动加S
+
+在xadmin后端管理界面里，对该Model进行添加操作的时候，报错：list index out of range
+原因有两方面：
+1、在创建Model的时候，存在类型是DateTimeField的字段
+2、input_html报错，Django后续新版本追加了spaceless标签的提交记录
+解决方案：找到input_html定义，换一种拆分方式，用“/><”替换掉“\n”，
+修改widgets.py原始代码：
+```
+input_html = [ht for ht in super(AdminSplitDateTime, self).render(name, value, attrs).split('\n') if ht != '']
+```
+下面为改好的：
+```
+input_html = [ht for ht in super(AdminSplitDateTime, self).render(name, value, attrs).split('/><') if ht != '']
+input_html[0] = input_html[0] + "/>"
+input_html[1] = "<" + input_html[1]
+```
+参考链接：
+[http://blog.csdn.net/yuhan963/article/details/79167743](http://blog.csdn.net/yuhan963/article/details/79167743)
+
+
+django error: [Errno 10053]：
+现象：反复刷新页面，debug就会报这个错，
+google了一下，应该是属于django版本的问题，不影响什么功能。
+
 
 参考链接：
 

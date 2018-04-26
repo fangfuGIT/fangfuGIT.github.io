@@ -52,9 +52,13 @@ sorted()
 d='dxcuUdasx'
 print d.capitalize()
 ```
+匿名函数:
+```
+lamdba[arg1, ..argN]:expression
+a=lamdba x, y: x+y
+```
 
-装饰器：
-本质上就是不改变原函数的代码的基础上，为原函数增加新功能的函数
+装饰器,本质上就是不改变原函数的代码的基础上，为原函数增加新功能的函数,例如：
 ```
 def log(func):
     def inner(*args, **kw):
@@ -68,16 +72,34 @@ def f():
 f()
 ```
 
-偏函数：
-适用于较多参数的函数,创建新函数，固定住原函数的部分参数，从而使调用更简单
+偏函数，适用于较多参数的函数,创建新函数，固定住原函数的部分参数，从而使调用更简单。例如：
 ```
 import functools
 int2 = functools.partial(int, base=2)
 int2('1000000')
 ```
 
+类继承，用super(Student, self).__init__(name, gender)去初始化父类:
+```
+class Person(object):
+    def __init__(self, name, gender):
+        self.name = name
+        self.gender = gender
+
+class Teacher(Person):
+
+    def __init__(self, name, gender, course):
+        super(Teacher, self).__init__(name, gender)
+        self.course=course
+
+t = Teacher('Alice', 'Female', 'English')
+print t.name
+print t.course
+print isinstance(t, Person)  # 使用isinstance判断类型
+```
 
 
 python 基本语法学习  [https://www.imooc.com/learn/177](https://www.imooc.com/learn/177)
 
 python 函数模块对象  [https://www.imooc.com/learn/317](https://www.imooc.com/learn/317)
+

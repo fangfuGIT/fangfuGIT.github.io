@@ -4,7 +4,7 @@ title:  "centos6.X常用命令随手记"
 date:   2018-02-02 09:35:18
 categories: centos
 tags: centos
-excerpt: 再熟悉的命令，隔一段时间不用也会遗忘，故而记录一下
+excerpt: centos的一些命令，再熟悉的命令，隔一段时间不用也会遗忘，故而记录一下
 mathjax: true
 ---
 

@@ -55,3 +55,13 @@ show variables like "%bin%";
 set global max_binlog_cache_size = 8589934592;
 show global variables like 'wait_timeout';
 ```
+
+查询12.17日-22日单日累积充值1000以上的用户:
+```
+select concat('d:\\mysql\\bin\\mysql --default-character-set=utf8 -uroot -ppassword -N -h ',f.TelecomIP,' -P 2433 ',s.DbName,' -e "select ',serverid,' serverid,''',servername,''' servername,entryport,t.account,rolename,sum(currencyamt) money,paydate from t_u_pay_order t left join property p on t.account = p.account where t.PayDate >=20171217 and t.PayDate <=20171222 group by t.account,date(t.paydate) having money >= 1000" >> D:\\tongji\\0111.txt') from db_center_game.t_product_server s inner join t_server_fixedassets f on s.masterdbId=f.id where status=1 and s.platid not in(100,999)
+```
+
+查找数据库报错的信息
+```
+find . -name *.err
+```
