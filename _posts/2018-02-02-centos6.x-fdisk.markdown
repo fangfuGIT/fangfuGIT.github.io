@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "关于centos6.X挂载磁盘分区的笔记"
+title:  "centos6.X挂载磁盘分区的笔记"
 date:   2018-02-02 15:14:54
 categories: centos
 tags: centos

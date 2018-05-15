@@ -4,7 +4,7 @@ title:  "Python笔记"
 date:   2018-02-22 15:20:00
 categories: Python
 tags: Django
-excerpt: Python笔记，供以后查询使用，持续更新中...
+excerpt: Python简单笔记，供以后查询使用，持续更新中...
 mathjax: true
 ---
 

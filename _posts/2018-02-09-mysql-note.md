@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "mysql的相关笔记"
+title:  "mysql的笔记"
 date:   2018-02-09 14:31:00
 categories: mysql
 tags: mysql
-excerpt: 这是较早前记录在本子上的一些mysql笔记,移植到这边来..
+excerpt: 这是较早前记录在纸本上的一些mysql命令记录,移植到这边来..
 mathjax: true
 ---
 
