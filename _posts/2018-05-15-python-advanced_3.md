@@ -4,7 +4,7 @@ title:  "Python Advanced notes_3"
 date:   2018-05-15 11:46:00
 categories: Python
 tags: python
-excerpt: Python Advanced notes_3,Iterator、yield
+excerpt: Python Advanced notes_3,Iterator,yield,
 mathjax: true
 ---
 
@@ -22,7 +22,7 @@ Iterator 迭代器
 惰性求值，延迟求值，
 
 斐波拉契数列0 1 1 2 3 5 8 ...
-我们可以通过递归算法算出斐波拉契数列的值，也可以通过下面的代码算出他的执行过程：
+我们可以通过递归算法算出斐波拉契数列的值，也可以通过下面的代码算出他的执行过程，简单粗暴：
 ```
 def fib2(num):
     list=[]
@@ -49,9 +49,20 @@ for value in gen_fib(10):
 
 python解释器会用一个C语言函数PyEval_EvalFramEx去执行函数，首先会创建一个栈桢（stack frame）,在栈桢对象的上下文去运行字节码对象，当调用子函数，又会创建一个栈桢。
 所有栈桢都是分配上堆内存上，这就决定了栈桢可以独立于调用者存在。
+
+为了让生成器（带yield的函数），能简易的在其他函数中直接调用，我们可以用yield from, 用上面的例子来改,添加一个函数，用yield from方法，执行完成以后，效果是一样的：
 ```
-import dis
+def gen_fib(num):
+    n,a,b = 0,0,1
+    while n<num:
+        yield b
+        a,b = b,a+b
+        n=n+1
 
+def dy(num):
+    var = yield from gen_fib(num)
+    return var
+
+for value in dy(10):
+    print(value)
 ```
-
-
