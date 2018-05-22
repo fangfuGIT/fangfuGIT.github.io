@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Python Advanced notes_2"
+title:  "Python Advanced notes-2"
 date:   2018-05-10 18:00:00
 categories: Python
 tags: python
-excerpt: Python Advanced notes_2,metaclass
+excerpt: Python Advanced notes-2,metaclass
 mathjax: true
 ---
 

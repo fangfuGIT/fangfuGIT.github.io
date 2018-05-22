@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Python Advanced notes_1"
+title:  "Python Advanced notes-1"
 date:   2018-05-10 15:10:00
 categories: Python
 tags: python
-excerpt: Python Advanced notes_1,a bit of mess
+excerpt: Python Advanced notes-1,a bit of mess
 mathjax: true
 ---
 

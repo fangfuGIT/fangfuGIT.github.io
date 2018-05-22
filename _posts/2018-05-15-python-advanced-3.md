@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "Python Advanced notes_3"
+title:  "Python Advanced notes-3"
 date:   2018-05-15 11:46:00
 categories: Python
 tags: python
-excerpt: Python Advanced notes_3,Iterator,yield,
+excerpt: Python Advanced notes-3,Iterator,yield,
 mathjax: true
 ---
 
