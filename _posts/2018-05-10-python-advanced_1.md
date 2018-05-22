@@ -8,16 +8,16 @@ excerpt: Python Advanced notes_1,a bit of mess
 mathjax: true
 ---
 
-python一切皆对象
-对象有三个特征：
-1、身份：内存地址
-2、类型：int,float,list..
-3、值：1
-object是最顶层的基类
-type一般用来返回一个类型，同时type也可以生成一个类，
-type本身是一个类，type也是一个对象。typy的父类是object，object的类型是type，包括object、list、str、dict等都是typy的一个实例。
+python一切皆对象。  
+对象有三个特征：  
+1、身份：内存地址  
+2、类型：int,float,list..  
+3、值：1  
+object是最顶层的基类  
+type一般用来返回一个类型，同时type也可以生成一个类，  
+type本身是一个类，type也是一个对象。typy的父类是object，object的类型是type，包括object、list、str、dict等都是typy的一个实例。  
 
-我们可以通过内置函数hasattr()来判断一个类是否有这个方法，如：
+我们可以通过内置函数hasattr()来判断一个类是否有这个方法，如：  
 ```
 class A:
     pass
