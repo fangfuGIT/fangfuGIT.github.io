@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "centos6.X常用命令随手记"
+title:  "centos常用命令"
 date:   2018-02-02 09:35:18
 categories: centos
 tags: centos
@@ -29,6 +29,12 @@ uptime
 getconf LONG_BIT #查看64/32位
 ```
 
+   
+   
+centos7下配置dns：  
+nmcli connection show    # 查看当前启动的连接  
+nmcli con mod eth0 ipv4.dns 61.139.2.69    #更改dns  
+nmcli con up eth0    #配置生效   
 
 
 
