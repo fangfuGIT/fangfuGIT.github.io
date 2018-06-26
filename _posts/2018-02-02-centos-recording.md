@@ -36,5 +36,12 @@ nmcli connection show    # 查看当前启动的连接
 nmcli con mod eth0 ipv4.dns 61.139.2.69    #更改dns  
 nmcli con up eth0    #配置生效   
 
+centos7的防火墙是firewall,so，加端口：  
+firewall-cmd --zone=public --add-port=8080/tcp --permanent   
+--zone作用域  
+--add-port=8080/tcp添加端口，端口/通讯协议  
+firewall-cmd --reload （重启防火墙）   
+
+
 
 
