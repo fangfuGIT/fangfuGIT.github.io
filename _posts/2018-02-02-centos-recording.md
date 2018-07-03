@@ -42,6 +42,9 @@ firewall-cmd --zone=public --add-port=8080/tcp --permanent
 --add-port=8080/tcp添加端口，端口/通讯协议  
 firewall-cmd --reload （重启防火墙）   
 
+systemctl enable docker（开机启动docker）   
+
+
 
 
 
