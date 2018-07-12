@@ -37,6 +37,10 @@ workon py3virtualenv
 
 
 关于一些函数的记录：
+
+list = ",".join(list2)
+join方法是把字符串/列表/元组/字典中的所有元素转换为一个字符串，如上例，以","分隔
+
 ```
 capitalize() #首字母大写，其余全部小写 
 upper() #全转换成大写
