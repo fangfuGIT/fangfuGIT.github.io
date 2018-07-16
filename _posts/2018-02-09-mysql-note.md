@@ -65,3 +65,8 @@ select concat('d:\\mysql\\bin\\mysql --default-character-set=utf8 -uroot -ppassw
 ```
 find . -name *.err
 ```
+
+修改字段为自增字段，前提是这个字段必须为主键：
+```
+alter table table_name modify column id int auto_increment;
+```

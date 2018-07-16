@@ -6,7 +6,7 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: 房馥的笔记
+title: 房馥的技术博客
 brief-intro: Operation Engineer
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://fangfu.github.io" # the base hostname & protocol for your site
@@ -23,7 +23,7 @@ email: jiuguju@163.com
 #linkedIn_username: fangfu
 #dribbble_username:
 
-description_footer: 房馥的个人笔记！
+description_footer: 房馥的技术博客！
 
 #comments
 # two ways to comment, only choose one, and use your own short name
