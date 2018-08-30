@@ -29,6 +29,10 @@ uptime
 getconf LONG_BIT #查看64/32位
 ```
 
+最简单的独立运行 rsync 服务的方法：
+```
+/usr/bin/rsync --daemon
+```
    
    
 centos7下配置dns：  
