@@ -1,10 +1,10 @@
 ---
 layout: post
-title:  "MongoDB的管道查询"
-date:   2019-12-26 10:42:18
-categories: MongoDB 
-tags: MongoDB
-excerpt: MongoDB
+title:  "mongodb-aggregate"
+date:   2018-12-26 10:42:02
+categories: mongodb 
+tags: mongodb
+excerpt: mongodb
 mathjax: true
 ---
 

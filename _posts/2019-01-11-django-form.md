@@ -1,12 +1,14 @@
 ---
 layout: post
-title:  "django+前端+ModelForm的笔记"
-date:   2019-01-11 15:23:12
-categories: django 
-tags: django
-excerpt: django
+title:  "django-form"
+date:   2019-01-11 15:46:02
+categories:  django
+tags: 
+excerpt: 
 mathjax: true
 ---
+
+
 
 xadmin的超级管理员重设：createsuperuser   
 

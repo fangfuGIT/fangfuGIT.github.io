@@ -1,12 +1,15 @@
 ---
 layout: post
 title:  "PostgreSQL"
-date:   2019-12-24 10:23:12
-categories: PostgreSQL 
-tags: PostgreSQL
-excerpt: PostgreSQL
+date:   2019-12-24 10:46:02
+categories:  
+tags: 
+excerpt: 
 mathjax: true
 ---
+
+
+
 
 
 安装postgresql：
@@ -55,7 +58,7 @@ psql -U postgres -h localhost
 创建数据库名为testdb：
 createdb -h localhost -p 5432 -U postgres testdb  #直接外部调用createdb建库
 
-
+日志目录在：/var/lib/pgsql/data/pg_log
 
 
 
