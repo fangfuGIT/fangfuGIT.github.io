@@ -1,6 +1,6 @@
 ---
 layout: index
-title: BLOG
+title: 技術BLOG
 ---
 
 ## Contact
