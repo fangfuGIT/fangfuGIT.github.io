@@ -284,7 +284,7 @@ post:
       #src: //cdn.jsdelivr.net/gh/fangfuGIT/fangfuGIT.github.io@0.9.0/images/1578985623116.jpg
 
 valine:
-  enable: true
+  enable: false
   autoloader: /public/js/valine.js
   src: //cdn.jsdelivr.net/npm/valine
   appId: 9hABRddSuEkTgqLrt1VSK5B1-gzGzoHsz
