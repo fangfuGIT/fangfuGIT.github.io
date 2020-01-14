@@ -67,13 +67,13 @@ head: # 删改前确定知道自己在做什么
   - key: rel
     value: apple-touch-icon-precomposed
   - key: href
-    value: images/1578981707333.jpg
+    value: https://cdn.jsdelivr.net/gh/fangfuGIT/fangfuGIT.github.io@0.9.0/images/1578981707333.jpg
 - tag: link # 小图标，同上
   var:
   - key: rel
     value: 'shortcut icon'
   - key: href
-    value: images/1578981707333.jpg
+    value: https://cdn.jsdelivr.net/gh/fangfuGIT/fangfuGIT.github.io@0.9.0/images/1578981707333.jpg
 - tag: link # 下面是博客的css，有些插件的css是单独在插件里引用的，假如需要自己的css可以仿照去加在后面。无脑cdn加速了。
   var:
   - key: rel
@@ -178,7 +178,7 @@ script: # 需要在正文前调用的脚本或者插件的autoloader
 sidebar:
   avatar: # 侧边栏显示的头像
     enable: true
-    img: images/1565328930099.jpg # 头像的地址
+    img: https://cdn.jsdelivr.net/gh/fangfuGIT/fangfuGIT.github.io@0.9.0/images/1565328930099.jpg # 头像的地址
     info: <br/>笔记和日常的一些记录<br/>IT运维及其他相关的一些技术<br/>只讨论技术<br/> # 头像背后的信息
  # description: '<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=52 src="//music.163.com/outchain/player?type=0&id=155059595&auto=0&height=32"></iframe>'
   social:
