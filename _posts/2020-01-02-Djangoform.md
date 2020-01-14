@@ -30,10 +30,10 @@ def repo_list(request):
     {% endfor %}
 ```
 
-通过ModelForm自动生成表单：
+通过ModelForm自动生成表单：  
 ```
-class RepoForm(forms.ModelForm):
-    class Meta:
+class RepoForm(forms.ModelForm):  
+    class Meta:  
         model = RepoUpgrade
         fields = ['repo_name', 'repo_desc', 'repo_type', 'repo_source_type', 'repo_source_address', 'repo_user', 'repo_password', 'server_path', 'server_ip']
         widgets = {
@@ -48,14 +48,14 @@ class RepoForm(forms.ModelForm):
             'server_ip': forms.TextInput(attrs={'class': 'form-control', 'style': 'width:450px;'}),
         }
 
-def repo_add(request):
+def repo_add(request):    
     #add new repo
-    if request.method != 'POST':
+    if request.method != 'POST':   
         # didn't submit data: create a new form
         form = RepoForm  # RepoForm is imported from ./form.py
-    else:
+    else:  
         form = RepoForm(request.POST)
-        if form.is_valid():
+        if form.is_valid():  
             form.save()
             # redirect user to topics page
             return HttpResponseRedirect(reverse(''))
@@ -64,7 +64,7 @@ def repo_add(request):
     return render(request, 'repo_add.html', context)
 ```
 
-前端代码：
+前端代码： 
 ```
 {%extends 'base.html' %}
 {% block page_title %}
