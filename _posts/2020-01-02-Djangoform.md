@@ -66,22 +66,23 @@ def repo_add(request):
 
 前端代码： 
 ```
-{%extands 'base.html' %}
-{% block page_title %}
-    test
-{% endblock %}
+\\{%extends 'base.html' %}
+\\{% block page_title %}
+\\    test
+\\{% endblock %}
 
-{%block page_header%}
-    <h1 class="page-header">版本发布配置</h1>
-{%endblock%}
+\\{%block page_header%}
+\\    <h1 class="page-header">版本发布配置</h1>
+\\{%endblock%}
 
-{%block page_content%}
-    <form action="/repo_add/" method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <input type="submit" class="btn btn-success" value="提交">
-    </form>
-{%endblock%}
+\\{%block page_content%}
+\\    <form action="/repo_add/" method="post">
+\\        {% csrf_token %}
+\\       {{ form.as_p }}
+\\        <input type="submit" class="btn btn-success" value="提交">
+\\   </form>
+\\{%endblock%}
 ```
-说明一下：extends引入html的扩展模板文件，这样如果前端有改动，不用每个页面都修改    
+
+extends引入html的扩展模板文件，这样如果前端有改动，不用每个页面都修改    
 block是在模板文件指定块位置插入数据    
