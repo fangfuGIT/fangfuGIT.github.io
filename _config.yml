@@ -277,10 +277,10 @@ post:
     text: 如果这篇文章帮助到你，可以请我喝一杯～
     img: # 万一真的有人打赏呢~
     - id: wechat 
-      src: ../images/1578985599479.jpg
+      src: https://fangfugit.github.io/images/1578985599479.jpg
       #src: //cdn.jsdelivr.net/gh/fangfuGIT/fangfuGIT.github.io@0.9.0/images/1578985599479.jpg
     - id: alipay
-      src: ../images/1578985623116.jpg
+      src: https://fangfugit.github.io/images/1578985623116.jpg
       #src: //cdn.jsdelivr.net/gh/fangfuGIT/fangfuGIT.github.io@0.9.0/images/1578985623116.jpg
 
 valine:
