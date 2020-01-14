@@ -49,7 +49,7 @@ class RepoForm(forms.ModelForm):
         }
 
 def repo_add(request):
-    """add new repo"""
+    #add new repo
     if request.method != 'POST':
         # didn't submit data: create a new form
         form = RepoForm  # RepoForm is imported from ./form.py
@@ -60,7 +60,6 @@ def repo_add(request):
             # redirect user to topics page
             return HttpResponseRedirect(reverse(''))
            # return HttpResponseRedirect(reverse('learning_logs:topics'))
-
     context = {'form': form}
     return render(request, 'repo_add.html', context)
 ```
