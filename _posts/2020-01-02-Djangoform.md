@@ -54,7 +54,6 @@ def repo_add(request):
         # didn't submit data: create a new form
         form = RepoForm  # RepoForm is imported from ./form.py
     else:
-        # data submitted through post: process the data
         form = RepoForm(request.POST)
         if form.is_valid():
             form.save()
