@@ -3,11 +3,6 @@ layout: index
 title: BLOG
 ---
 
-
-
-
-
-
 ## Contact
 
 - Address: **Chengdu City, China**
