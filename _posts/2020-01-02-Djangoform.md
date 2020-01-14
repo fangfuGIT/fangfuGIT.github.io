@@ -66,7 +66,7 @@ def repo_add(request):
 
 前端代码： 
 ```
-\\{%extends 'base.html' %}
+\\{%e%x%t%ends 'base.html' %}
 \\{% block page_title %}
 \\    test
 \\{% endblock %}
@@ -83,6 +83,6 @@ def repo_add(request):
 \\   </form>
 \\{%endblock%}
 ```
-
+%e%x%t%ends就是extends，这里为了避免跟Jekyll冲突，
 extends引入html的扩展模板文件，这样如果前端有改动，不用每个页面都修改    
 block是在模板文件指定块位置插入数据    
