@@ -1,18 +1,17 @@
 ---
 layout: index
-title: 星合の空
+title: BLOG
 ---
 ## Contact
 
-- Address: **Sun Yat-sen University - 132 Waihuan East Rd. - Guangzhou, China**
-- Phone: **+86 18756280097**
+- Address: **Chengdu City, China**
+- Phone: **+86 18030500000**
 - E-mail:
-  - **wu.kan@foxmail.com**
-  - **wukan3@mail2.sysu.edu.cn**
-  - **im.wu.kan@gmail.com**
-- WeChat: **Wu-_-Kan**
-- QQ: **942759535**
-- Blog: **<https://wu-kan.github.io>**
+  - **39209557@qq.com**
+  - **fangfu123@163.com**
+- WeChat: **FangFu**
+- QQ: **39209557**
+- Blog: **<https://fangfugit.github.io>**
 
 ## Education
 
