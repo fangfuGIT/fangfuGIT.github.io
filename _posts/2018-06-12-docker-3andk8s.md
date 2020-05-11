@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "docker笔记3"
+title:  "docker和k8s笔记3"
 date:   2018-06-12 09:43:00
 categories: docker
 tags: docker

@@ -12,6 +12,8 @@ mathjax: true
 nginx环境及模块的安装部署
 http://www.ttlsa.com/nginx/nginx-lua-redis/
 
+http://www.ttlsa.com/nginx/nginx-modules-ngx_lua/
+
 
 80.conf
 ```
