@@ -67,4 +67,16 @@ chmod +x install-shadowsocks.sh
 搭建这个是工作需要，本文只做笔记，不做解释。   
 
 
+----------------
+
+
+https://github.com/getlantern/forum
+
+
+
+
+
+
+
+
 客户端下载地址：https://github.com/shadowsocks/shadowsocks-windows/releases/download/4.1.5/Shadowsocks-4.1.5.zip

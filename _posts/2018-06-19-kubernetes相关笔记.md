@@ -1,24 +1,13 @@
 ---
 layout: post
-title:  "docker和k8s笔记3"
-date:   2018-06-12 09:43:00
-categories: docker
-tags: docker
-excerpt: docker的笔记3，Docker Cloud ,kubernetes,Deployments
+title:  "kubernetes相关笔记"
+date:   2018-06-19 15:21:49
+categories: kubernetes
+tags: kubernetes
+excerpt: kubernetes
 mathjax: true
 ---
 
-# Docker Cloud   
-dockercloud官方提供的容器的管理、编排、部署的托管服务。   
-
-注意关联DockerCloud和github   
-
-UCP - Universal Control Plane   
-UCP是一个基于Docker的集群管理工具，集群中每个节点都应该安装Docker Engine  
-可以把UCP理解成一个网页版的docker swarm   
-
-DTR - docker trusted registry   
-DTR主要用于做image管理   
 
 
 # kubernetes
